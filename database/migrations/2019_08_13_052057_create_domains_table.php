@@ -18,6 +18,7 @@ class CreateDomainsTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->date('expiry_date')->nullable();
+            $table->enum('added_by', ['admin', 'user'])->default('user');
             $table->timestamp('mx_checked_at')->nullable();
             $table->enum('type', ['receive', 'send', 'send_receive'])->default('receive');
             $table->enum('status', ['active', 'inactive'])->default('active');
