@@ -1,0 +1,97 @@
+html, body, #app {
+    height: 100%;
+}
+
+#app .content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: #AAA;
+}
+.form-control-no-border:focus {
+  border-color:#ccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.input-group .at-sign {
+    background:white;
+    border-left:0;
+    border-right:0;
+    width:1.1rem;
+    padding-left:0 !important;
+}
+.brand-heading {
+    font-size: 27px;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.no-border {
+    border: 0px !important;
+}
+.content {
+
+}
+.email-text {
+    font-size: 18px;
+}
+.inbox-size-text {
+    font-size: 15px;
+}
+.random-refresh-buttons {
+    margin-top: 5px;
+}
+.benefits a {
+    vertical-align: -webkit-baseline-middle;
+}
+.benefit {
+    margin-top: 15px;
+    font-size: 17px;
+    padding: 0;
+}
+.benefit-dot {
+    font-size: 7px;
+    vertical-align: -webkit-baseline-middle;
+}
+.inbox {
+    border: 1px solid #343A40;
+    border-bottom: 0px;
+}
+.inbox-mail-header a {
+    vertical-align: -webkit-baseline-middle;
+}
+.inbox-mail-header div {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.inbox-mail-body {
+    background-color: white;
+}
+.inbox-mail {
+    border-bottom: 1px solid #343A40;
+}
+.inbox-mail-attachments {
+    display: contents;
+}
+.inbox-mail-attachment {
+    display: inline-grid;
+    width: fit-content;
+    border: 1px solid #d6d4d4;
+    margin: 0.1rem;
+    padding: 0.1rem;
+}
+.inbox-mail-attachment:hover {
+    background-color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
