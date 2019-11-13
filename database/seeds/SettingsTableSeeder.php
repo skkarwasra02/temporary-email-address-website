@@ -27,7 +27,7 @@ class SettingsTableSeeder extends Seeder
         // Mail server
         $setting = new Setting;
         $setting->setting_name = 'mail_server';
-        $setting->setting_value = "emailfake.com.";
+        $setting->setting_value = "";
         $setting->save();
 
         // Delete old attachments (hours)

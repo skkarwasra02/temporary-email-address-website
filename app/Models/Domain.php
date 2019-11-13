@@ -16,24 +16,18 @@ class Domain extends Model
     }
 
     public static function selectActiveRandomDomain($receive = true) {
-        $flag = false;
-        while(!$flag) {
-            if($receive) {
-                $domain = Domain::where('status', 'active')
-                                    ->where('type', 'receive')
-                                    ->orWhere('type', 'send_receive')
-                                    ->inRandomOrder()
-                                    ->first();
-            } else {
-                $domain = Domain::where('status', 'active')
-                                    ->where('type', 'send')
-                                    ->orWhere('type', 'send_receive')
-                                    ->inRandomOrder()
-                                    ->first();
-            }
-            if(self::validateDomain($domain->name) != false) {
-                $flag = true;
-            }
+        if($receive) {
+            $domain = Domain::where('status', 'active')
+                                ->where('type', 'receive')
+                                ->orWhere('type', 'send_receive')
+                                ->inRandomOrder()
+                                ->first();
+        } else {
+            $domain = Domain::where('status', 'active')
+                                ->where('type', 'send')
+                                ->orWhere('type', 'send_receive')
+                                ->inRandomOrder()
+                                ->first();
         }
         return $domain;
     }
@@ -85,7 +79,7 @@ class Domain extends Model
             }
         }
         foreach($mx as $record) {
-            if($record["host"] == $ms || $record["host"] == $ms . ".") {
+            if($record["host"] == $ms || $record["host"] == $ms . "."  || strpos($record['host'], $ms)) {
                 $domain = self::firstOrNew([
                     'name' => $domainName
                 ]);
