@@ -155,7 +155,7 @@
                                                             </tr>
                                                         </table>
                                                     </div>
-                                                    <div class="inbox-mail-body col-12 mx-auto no-margin no-padding">
+                                                    <div class="inbox-mail-body col-12 mx-auto no-margin">
                                                         {!! $mail->getMessageBody() !!}
                                                     </div>
                                                     @if(count($mail->attachments))
