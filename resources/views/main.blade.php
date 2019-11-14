@@ -103,7 +103,7 @@
             <div class="card no-border">
                 <div class="card-body pt-0">
                     <div class="row">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12 text-center mx-auto">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12 mx-auto">
                             @if(Request::is('inbox/*') || Request::is('inbox'))
                                 <div class="inbox">
                                     <div class="row inbox-header text-white bg-dark pb-2 pt-2 mr-0 ml-0">

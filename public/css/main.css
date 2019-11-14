@@ -65,6 +65,9 @@ html, body, #app {
     border: 1px solid #343A40;
     border-bottom: 0px;
 }
+..inbox-mail-header {
+    text-align: center;
+}
 .inbox-mail-header a {
     vertical-align: -webkit-baseline-middle;
 }
