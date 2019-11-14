@@ -49,6 +49,9 @@ html, body, #app {
 .random-refresh-buttons {
     margin-top: 5px;
 }
+.benefits {
+    text-align: center;
+}
 .benefits a {
     vertical-align: -webkit-baseline-middle;
 }

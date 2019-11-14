@@ -84,7 +84,15 @@
                                 <input type="text" id="delete_attachments" class="form-control-lg" name="settings[delete_attachments]" value="{{ $data['settings']::getSettingValue('delete_attachments') }}">
                             </div>
                         </div>
-                    </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="" for="google_analytics_code">Google Analytics Code :</label>
+                                <textarea id="google_analytics_code" class="form-control-lg" name="settings[google_analytics_code]" rows="8" cols="80">{{ $data['settings']::getSettingValue('google_analytics_code') }}</textarea>
+                            </div>
+                        </div>
+                    </div><br>
 
                     <div class="row">
                         <div class="col-6 mx-auto">

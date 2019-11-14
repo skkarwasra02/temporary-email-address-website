@@ -41,5 +41,11 @@ class SettingsTableSeeder extends Seeder
         $setting->setting_name = 'security_key';
         $setting->setting_value = bin2hex(openssl_random_pseudo_bytes(16));
         $setting->save();
+
+        // Security key
+        $setting = new Setting;
+        $setting->setting_name = 'google_analytics_code';
+        $setting->setting_value = '';
+        $setting->save();
     }
 }
