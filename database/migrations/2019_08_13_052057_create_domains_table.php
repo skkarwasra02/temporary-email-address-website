@@ -16,7 +16,7 @@ class CreateDomainsTable extends Migration
         Schema::create('domains', function (Blueprint $table) {
             $table->bigIncrements('domain_id');
             $table->timestamps();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->date('expiry_date')->nullable();
             $table->enum('added_by', ['admin', 'user'])->default('user');
             $table->timestamp('mx_checked_at')->nullable();

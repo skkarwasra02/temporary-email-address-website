@@ -17,7 +17,7 @@ class CreateMailMessagesTable extends Migration
             $table->bigIncrements('mail_id');
             $table->timestamp('created_at');
             $table->string('file_name');
-            $table->string('message_id')->unique();
+            $table->string('message_id');
             $table->string('subject');
             $table->integer('size')->nullable();
         });
