@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta name="description" content="Send mails with attachments using temporary email address">
+<meta name="keywords" content="temporary email generator, temporary email, temporary mail generator, email generator, temporary mail, temp mail, send temp mails, send temporary emails">
+@endsection
+
 @section('css')
 <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 @endsection

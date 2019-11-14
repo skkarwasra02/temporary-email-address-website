@@ -175,6 +175,10 @@
                                     @endforeach
                                 </div>
                             @else
+                                @section('meta')
+                                    <meta name="description" content="Send or receive temporary mails without registration. You can use your own domain to receive mails without limits.">
+                                    <meta name="keywords" content="temporary email generator, temporary email, temp email, temporary mail generator, email generator, temporary mail, temp mail">
+                                @endsection
                                 <div class="benefits">
                                     <h3>Why Use {{ config('app.name', 'Laravel') }}?</h3>
                                     <hr />

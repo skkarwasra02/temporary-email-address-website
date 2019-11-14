@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta name="description" content="Add your own domain to receive mails for free">
+@endsection
+
 @section('css')
 @endsection
 

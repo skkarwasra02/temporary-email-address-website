@@ -35,7 +35,7 @@
     <div id="app">
         <div class="content col-md-8 mx-auto no-padding">
             <div class="bg-dark text-white brand-heading text-center">
-                Send Receive Temp Mails
+                {{ config('app.name', 'Laravel') }}
             </div>
             <nav class="navbar navbar-expand-md bg-dark shadow-sm navbar-dark">
                 <div class="container">
