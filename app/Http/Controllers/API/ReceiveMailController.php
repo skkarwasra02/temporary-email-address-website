@@ -7,12 +7,16 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use App\Utils\InboxMail;
 use App\Models\MailMessage;
+use App\Models\Setting;
 use Illuminate\Support\Str;
 
 class ReceiveMailController extends Controller
 {
     public function receiveMail(Request $request)
     {
+        // Verify security key
+        if($request->key != Setting::getSettingValue('security_key')) return;
+
         $mailResource = fopen('php://input', 'r');
         // Test mail resource
         //$mailResource = fopen($_FILES['email']['tmp_name'], 'r');

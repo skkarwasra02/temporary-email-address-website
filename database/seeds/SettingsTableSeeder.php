@@ -27,13 +27,19 @@ class SettingsTableSeeder extends Seeder
         // Mail server
         $setting = new Setting;
         $setting->setting_name = 'mail_server';
-        $setting->setting_value = "";
+        $setting->setting_value = '';
         $setting->save();
 
         // Delete old attachments (hours)
         $setting = new Setting;
         $setting->setting_name = 'delete_attachments';
         $setting->setting_value = '1';
+        $setting->save();
+
+        // Security key
+        $setting = new Setting;
+        $setting->setting_name = 'security_key';
+        $setting->setting_value = bin2hex(openssl_random_pseudo_bytes(16));
         $setting->save();
     }
 }

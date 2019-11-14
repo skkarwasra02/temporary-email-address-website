@@ -63,6 +63,14 @@
                         </div>
                     </div><br>
                     <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="" for="security_key">Security Key :</label>
+                                <input type="text" id="security_key" class="form-control-lg" name="settings[security_key]" value="{{ $data['settings']::getSettingValue('security_key') }}">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="row">
                         <div class="col-12">
                             <div class="h5">
                                 Cron Job Action's Setting
