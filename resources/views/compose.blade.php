@@ -18,7 +18,7 @@
 </script>
 <script src="{{ asset('js/compose.js') }}" defer></script>
     @if(!(Request::is('inbox/*') || Request::is('inbox')))
-        {{ $setting::getSettingValue('google_analytics_code') }}
+        {!! $setting::getSettingValue('google_analytics_code') !!}
     @endif
 @endsection
 
