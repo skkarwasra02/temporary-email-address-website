@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+<title>Add domain | {{ config('app.name', 'Temporary Address') }}</title>
+@endsection
+
 @section('meta')
 <meta name="description" content="Add your own domain to receive mails for free">
 @endsection

@@ -9,7 +9,6 @@
 
     @yield('meta')
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
     @yield('title')
 
     <!-- Scripts -->

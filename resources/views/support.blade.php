@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+<title>Support | {{ config('app.name', 'Temporary Address') }}</title>
+@endsection
+
 @section('css')
 <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 @endsection

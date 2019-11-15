@@ -95,9 +95,7 @@ Route::get('/add-domain', 'AddDomainController@showPage')->name('add-domain');
 Route::get('/contact-us', 'SupportController@showPage')->name('support');
 
 Route::get('/test', function() {
-    $ct = file_get_contents("C:\Users\DELL\Downloads\a.eml");
-    dd($ct);
-    //\App\Models\Domain::validateDomain("domain1.com");
+    
 });
 
 // Main site POST routes
