@@ -43,7 +43,9 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-xl-12 mx-auto">
-                            {!! $ad::getCode(1) !!}
+                            <div class="row text-center">
+                                {!! $ad::getCode(1) !!}
+                            </div>
                             <div class="row">
                                 <div class="col-md-11 col-lg-10 col-sm-12 col-xl-8 mx-auto">
                                     <h3 class="text-center">Welcome to {{ config('app.name') }}</h3>
