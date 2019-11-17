@@ -122,7 +122,7 @@
                             <input type="text" name="ad_size" class="form-control" id="edit-ad-size" value="" />
                         </div>
                         <div class="form-group">
-                            <label for="">Added By</label>
+                            <label for="">Ad Code</label>
                             <textarea name="ad_code" class="form-control" id="edit-ad-code" rows="8" cols="80"></textarea>
                         </div>
                 </div>
