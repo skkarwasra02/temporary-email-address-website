@@ -98,6 +98,10 @@ Route::get('/tos', function() {
     return view('tos');
 })->name('tos');
 
+Route::get('/sitemap.xml', function() {
+    return Response::view('sitemap')->header('Content-Type', 'application/xml');
+})->name('sitemap');
+
 Route::get('/test', function() {
 
 });
