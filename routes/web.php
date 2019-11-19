@@ -94,8 +94,12 @@ Route::get('/add-domain', 'AddDomainController@showPage')->name('add-domain');
 
 Route::get('/contact-us', 'SupportController@showPage')->name('support');
 
+Route::get('/tos', function() {
+    return view('tos');
+})->name('tos');
+
 Route::get('/test', function() {
-    
+
 });
 
 // Main site POST routes

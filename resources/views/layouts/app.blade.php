@@ -82,7 +82,7 @@
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="{{url('#')}}">Privacy Policy</a>
+                                <a class="nav-link text-white" href="{{url('/tos')}}">Terms of service</a>
                             </li>
                         </ul>
                     </div>
